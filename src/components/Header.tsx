@@ -24,7 +24,7 @@ export const Header = () => {
           </div>
           <div className="flex items-center space-x-2 text-blue-600">
             <span className="text-blue-500">📞</span>
-            <span className="text-sm">(704) 228-3928</span>
+            <span className="text-sm">+1 901-457-1775</span>
           </div>
           <Button 
             variant="outline" 

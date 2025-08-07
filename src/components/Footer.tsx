@@ -31,13 +31,13 @@ export const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <span>📞</span>
-                <span>(704) 228-3928</span>
+                <span>+1 901-457-1775</span>
               </div>
               <div className="flex items-center space-x-2">
                 <span>📍</span>
                 <div>
-                  <div>10847 Bailey Rd</div>
-                  <div>Cornelius, NC 28031</div>
+                  <div>4091 Southmeadow Pkwy W</div>
+                  <div>Atlanta, GA 30349</div>
                 </div>
               </div>
             </div>
