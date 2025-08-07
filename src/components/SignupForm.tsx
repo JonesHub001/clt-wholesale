@@ -51,8 +51,8 @@ export const SignupForm = ({ isOpen, onClose }: SignupFormProps) => {
         throw error;
       }
 
-      // Send emails via Netlify Function
-      await fetch('/.netlify/functions/send-signup-emails', {
+      // Send emails via Netlify Func
+      await fetch('http://localhost:3001/api/send-signup-emails', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
