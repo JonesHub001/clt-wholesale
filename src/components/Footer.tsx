@@ -27,7 +27,7 @@ export const Footer = () => {
             <div className="space-y-2 text-sm text-gray-600">
               <div className="flex items-center space-x-2">
                 <span>📧</span>
-                <span>deals@cltwholesale.net</span>
+                <span>deal.ctlwholesale@gmail</span>
               </div>
               <div className="flex items-center space-x-2">
                 <span>📞</span>

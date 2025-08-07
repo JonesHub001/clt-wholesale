@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 export const ReviewsSection = () => {
   const reviews = [
     {
-      rating: 5,
+      rating: 4,
       date: "Aug 06, 2025",
       text: "Just want to take the time to THANK CLT WHOLESALE, if it wasn't for these guys my business wouldn't be what it is today. They have been with me since...",
       author: "Jeffrey Merritt",
