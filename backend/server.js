@@ -51,17 +51,7 @@ app.post('/api/send-signup-emails', async (req, res) => {
               Our team will reach out with the latest deals and opportunities tailored just for you.
             </p>
             <hr style="margin: 24px 0;">
-            <h4 style="color: #1a202c;">Your Submission Details:</h4>
-            <ul style="font-size: 15px; color: #444; padding-left: 18px;">
-              <li><strong>Name:</strong> ${firstName} ${lastName}</li>
-              <li><strong>Email:</strong> ${email}</li>
-              <li><strong>Phone:</strong> ${phone}</li>
-              <li><strong>Language:</strong> ${language}</li>
-              <li><strong>Purchase Intent:</strong> ${purchaseIntent}</li>
-              <li><strong>Interests:</strong> ${(interests || []).join(', ')}</li>
-              <li><strong>Other:</strong> ${other}</li>
-              <li><strong>Promotions:</strong> ${agreeToPromotions ? 'Yes' : 'No'}</li>
-            </ul>
+           
             <p style="font-size: 15px; color: #333; margin-top: 32px;">
               Best regards,<br>
               The CLT Wholesale Team<br>
