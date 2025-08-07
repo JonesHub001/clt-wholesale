@@ -14,7 +14,51 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      signup_submissions: {
+        Row: {
+          agree_to_promotions: boolean | null
+          created_at: string
+          email: string
+          first_name: string
+          id: string
+          interests: string[] | null
+          last_name: string | null
+          other_interests: string | null
+          phone: string | null
+          preferred_language: string | null
+          purchase_intent: string | null
+          updated_at: string
+        }
+        Insert: {
+          agree_to_promotions?: boolean | null
+          created_at?: string
+          email: string
+          first_name: string
+          id?: string
+          interests?: string[] | null
+          last_name?: string | null
+          other_interests?: string | null
+          phone?: string | null
+          preferred_language?: string | null
+          purchase_intent?: string | null
+          updated_at?: string
+        }
+        Update: {
+          agree_to_promotions?: boolean | null
+          created_at?: string
+          email?: string
+          first_name?: string
+          id?: string
+          interests?: string[] | null
+          last_name?: string | null
+          other_interests?: string | null
+          phone?: string | null
+          preferred_language?: string | null
+          purchase_intent?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
