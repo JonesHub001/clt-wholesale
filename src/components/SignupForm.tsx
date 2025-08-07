@@ -8,6 +8,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { X } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 interface SignupFormProps {
   isOpen: boolean;
@@ -28,14 +29,55 @@ export const SignupForm = ({ isOpen, onClose }: SignupFormProps) => {
     agreeToPromotions: false
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    toast({
-      title: "Success!",
-      description: "Thank you for joining our VIP list. We'll be in touch soon!",
-    });
-    onClose();
+    
+    try {
+      const { error } = await supabase
+        .from('signup_submissions')
+        .insert({
+          first_name: formData.firstName,
+          last_name: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          preferred_language: formData.language,
+          purchase_intent: formData.purchaseIntent,
+          interests: formData.interests,
+          other_interests: formData.other,
+          agree_to_promotions: formData.agreeToPromotions
+        });
+
+      if (error) {
+        throw error;
+      }
+
+      toast({
+        title: "Success!",
+        description: "Thank you for joining our VIP list. We'll be in touch soon!",
+      });
+      
+      // Reset form
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        language: "",
+        purchaseIntent: "",
+        interests: [],
+        other: "",
+        agreeToPromotions: false
+      });
+      
+      onClose();
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Error",
+        description: "There was an error submitting your form. Please try again.",
+        variant: "destructive",
+      });
+    }
   };
 
   const handleInterestChange = (interest: string, checked: boolean) => {

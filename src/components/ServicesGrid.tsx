@@ -1,20 +1,25 @@
+import individualItems from "@/assets/individual-items.jpg";
+import palletSales from "@/assets/pallet-sales.jpg";
+import customTruckloads from "@/assets/custom-truckloads.jpg";
+import fullDelivery from "@/assets/full-delivery.jpg";
+
 export const ServicesGrid = () => {
   const services = [
     {
       title: "INDIVIDUAL ITEMS",
-      image: "/placeholder.svg"
+      image: individualItems
     },
     {
       title: "PALLET SALES", 
-      image: "/placeholder.svg"
+      image: palletSales
     },
     {
       title: "CUSTOM TRUCKLOADS",
-      image: "/placeholder.svg"
+      image: customTruckloads
     },
     {
       title: "FULL TRUCKLOADS DELIVERED TO YOUR DOOR",
-      image: "/placeholder.svg"
+      image: fullDelivery
     }
   ];
 
