@@ -1,7 +1,6 @@
-const { Resend } = require('resend');
-require('dotenv').config();
+import { Resend } from 'resend';
 
-exports.handler = async (event) => {
+export async function handler(event) {
   try {
     const { firstName, lastName, email, phone, language, purchaseIntent, interests, other, agreeToPromotions } = JSON.parse(event.body);
     const resend = new Resend(process.env.RESEND_API_KEY);
