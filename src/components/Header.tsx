@@ -38,13 +38,15 @@ export const Header = () => {
 
         {/* Mobile Contact */}
         <div className="md:hidden">
-          <Button 
-            variant="outline" 
-            size="sm"
-            className="border-blue-600 text-blue-600 hover:bg-blue-50"
-          >
-            CALL US
-          </Button>
+          <a href="tel:+19014571775">
+            <Button 
+              variant="outline" 
+              size="sm"
+              className="border-blue-600 text-blue-600 hover:bg-blue-50"
+            >
+              CALL US
+            </Button>
+          </a>
         </div>
       </div>
     </header>
