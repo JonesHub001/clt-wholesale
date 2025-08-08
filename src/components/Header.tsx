@@ -22,16 +22,18 @@ export const Header = () => {
             <span className="text-blue-500">🕘</span>
             <span className="text-sm">9:00 a.m. - 5:00 p.m.</span>
           </div>
-          <div className="flex items-center space-x-2 text-blue-600">
+            <div className="flex items-center space-x-2 text-blue-600">
             <span className="text-blue-500">📞</span>
             <span className="text-sm">+1 901-457-1775</span>
-          </div>
-          <Button 
-            variant="outline" 
-            className="border-blue-600 text-blue-600 hover:bg-blue-50"
-          >
-            CALL US
-          </Button>
+            </div>
+            <a href="tel:+19014571775">
+            <Button
+              variant="outline"
+              className="border-blue-600 text-blue-600 hover:bg-blue-50"
+            >
+              CALL US
+            </Button>
+            </a>
         </div>
 
         {/* Mobile Contact */}
