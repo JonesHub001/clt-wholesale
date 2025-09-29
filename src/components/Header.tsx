@@ -24,14 +24,14 @@ export const Header = () => {
           </div>
           <div className="flex items-center space-x-2 text-blue-600">
           
-          </div>
+          {/* </div>
           <Button 
             variant="outline" 
             className="border-blue-600 text-blue-600 hover:bg-blue-50"
           >
             CALL US
           </Button>
-        </div>
+        </div> */}
 
         {/* Mobile Contact */}
         <div className="md:hidden">
