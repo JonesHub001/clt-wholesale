@@ -23,8 +23,7 @@ export const Header = () => {
             <span className="text-sm">9:00 a.m. - 5:00 p.m.</span>
           </div>
           <div className="flex items-center space-x-2 text-blue-600">
-            <span className="text-blue-500">📞</span>
-            <span className="text-sm">+1 901-457-1775</span>
+          
           </div>
           <Button 
             variant="outline" 
