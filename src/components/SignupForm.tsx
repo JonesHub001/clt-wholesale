@@ -51,11 +51,18 @@ export const SignupForm = ({ isOpen, onClose }: SignupFormProps) => {
         throw error;
       }
 
+      // Send emails via Netlify Function
+      await fetch('/.netlify/functions/send-signup-emails', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
       toast({
         title: "Success!",
         description: "Thank you for joining our VIP list. We'll be in touch soon!",
       });
-      
+
       // Reset form
       setFormData({
         firstName: "",
@@ -68,7 +75,7 @@ export const SignupForm = ({ isOpen, onClose }: SignupFormProps) => {
         other: "",
         agreeToPromotions: false
       });
-      
+
       onClose();
     } catch (error) {
       console.error('Error submitting form:', error);
