@@ -22,27 +22,11 @@ export const Header = () => {
             <span className="text-blue-500">🕘</span>
             <span className="text-sm">9:00 a.m. - 5:00 p.m.</span>
           </div>
-          <div className="flex items-center space-x-2 text-blue-600">
-          
-          {/* </div>
-          <Button 
-            variant="outline" 
-            className="border-blue-600 text-blue-600 hover:bg-blue-50"
-          >
-            CALL US
-          </Button>
-        </div> */}
 
-        {/* Mobile Contact */}
-        <div className="md:hidden">
-          <Button 
-            variant="outline" 
-            size="sm"
-            className="border-blue-600 text-blue-600 hover:bg-blue-50"
-          >
-            CALL US
-          </Button>
-        </div>
+          
+         
+
+       
       </div>
     </header>
   );
