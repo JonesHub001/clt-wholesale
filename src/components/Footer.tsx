@@ -29,10 +29,7 @@ export const Footer = () => {
                 <span>📧</span>
                 <span>deal.ctlwholesale@gmail</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <span>📞</span>
-                <span>+1 901-457-1775</span>
-              </div>
+              
               <div className="flex items-center space-x-2">
                 <span>📍</span>
                 <div>
