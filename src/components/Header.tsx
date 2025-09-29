@@ -12,41 +12,18 @@ export const Header = () => {
               <span className="text-blue-600 text-sm align-super">#</span>
               <span className="text-blue-800"> Wholesale</span>
             </h1>
-            <p className="text-blue-700 text-sm md:text-base">A Registix Company</p>
+            <p className="text-blue-700 text-sm md:text-base">
+              A Registix Company
+            </p>
           </div>
         </div>
 
-        {/* Contact Info */}
+        {/* Contact Info (Desktop) */}
         <div className="hidden md:flex items-center space-x-6">
           <div className="flex items-center space-x-2 text-blue-600">
             <span className="text-blue-500">🕘</span>
             <span className="text-sm">9:00 a.m. - 5:00 p.m.</span>
           </div>
-            <div className="flex items-center space-x-2 text-blue-600">
-            <span className="text-blue-500">📞</span>
-            <span className="text-sm">+1 901-457-1775</span>
-            </div>
-            <a href="tel:+19014571775">
-            <Button
-              variant="outline"
-              className="border-blue-600 text-blue-600 hover:bg-blue-50"
-            >
-              CALL US
-            </Button>
-            </a>
-        </div>
-
-        {/* Mobile Contact */}
-        <div className="md:hidden">
-          <a href="tel:+19014571775">
-            <Button 
-              variant="outline" 
-              size="sm"
-              className="border-blue-600 text-blue-600 hover:bg-blue-50"
-            >
-              CALL US
-            </Button>
-          </a>
         </div>
       </div>
     </header>
