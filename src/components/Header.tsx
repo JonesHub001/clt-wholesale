@@ -21,8 +21,8 @@ export const Header = () => {
         {/* Contact Info (Desktop) */}
         <div className="hidden md:flex items-center space-x-6">
           <div className="flex items-center space-x-2 text-blue-600">
-            <span className="text-blue-500">🕘</span>
-            <span className="text-sm">9:00 a.m. - 5:00 p.m.</span>
+            <span className="text-blue-500">Call Us</span>
+            <span className="text-sm">(929) 704-1742</span>
           </div>
         </div>
       </div>
