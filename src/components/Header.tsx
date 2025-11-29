@@ -22,7 +22,7 @@ export const Header = () => {
         <div className="hidden md:flex items-center space-x-6">
           <div className="flex items-center space-x-2 text-blue-600">
             <span className="text-blue-500">Call Us</span>
-            <span className="text-sm">(929) 704-1742</span>
+            {/* <span className="text-sm">(929) 704-1742</span> */}
           </div>
         </div>
       </div>
