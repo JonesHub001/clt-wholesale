@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-
 export const Header = () => {
   return (
     <header className="bg-white border-b border-gray-200 px-4 py-4">
@@ -21,8 +19,10 @@ export const Header = () => {
         {/* Contact Info (Desktop) */}
         <div className="hidden md:flex items-center space-x-6">
           <div className="flex items-center space-x-2 text-blue-600">
-            
-           
+            <span>📞</span>
+            <a href="tel:+15392227792" className="font-semibold hover:underline">
+              +1 (539) 222-7792
+            </a>
           </div>
         </div>
       </div>

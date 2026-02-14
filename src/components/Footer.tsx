@@ -29,11 +29,13 @@ export const Footer = () => {
                 <span>📧</span>
                 <span>deal.ctlwholesale@gmail</span>
               </div>
-               <div className="flex items-center space-x-2">
-                
-              
+              <div className="flex items-center space-x-2">
+                <span>📞</span>
+                <a href="tel:+15392227792" className="hover:underline">
+                  +1 (539) 222-7792
+                </a>
               </div>
-              
+
               <div className="flex items-center space-x-2">
                 <span>📍</span>
                 <div>
