@@ -20,8 +20,8 @@ export const Header = () => {
         <div className="hidden md:flex items-center space-x-6">
           <div className="flex items-center space-x-2 text-blue-600">
             <span>📞</span>
-            <a href="tel:+15392227792" className="font-semibold hover:underline">
-              +1 (539) 222-7792
+            <a href="tel:+18704092836" className="font-semibold hover:underline">
+              +1 (870) 409-2836
             </a>
           </div>
         </div>
