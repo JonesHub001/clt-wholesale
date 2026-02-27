@@ -39,8 +39,8 @@ export const Footer = () => {
               <div className="flex items-center space-x-2">
                 <span>📍</span>
                 <div>
-                  <div>4091 Southmeadow Pkwy W</div>
-                  <div>Atlanta, GA 30349</div>
+                  <div>4655 W McDowell Rd Suite #108,</div>
+                  <div>Phoenix, AZ 85035, United States</div>
                 </div>
               </div>
             </div>
