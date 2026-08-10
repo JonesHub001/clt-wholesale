@@ -17,7 +17,7 @@ export const Footer = () => {
 
           {/* Copyright */}
           <div className="text-center">
-            <p className="text-sm text-gray-600">© Copyright 2025, CLT Wholesale.</p>
+            <p className="text-sm text-gray-600">© Copyright 2026, CLT Wholesale.</p>
             <p className="text-sm text-gray-600">All rights reserved.</p>
           </div>
 
