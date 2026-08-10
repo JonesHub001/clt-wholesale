@@ -32,7 +32,7 @@ export const Footer = () => {
               <div className="flex items-center space-x-2">
                 <span>📞</span>
                 <a href="tel:+18704092836" className="hover:underline">
-                  +1 (870) 409-2836
+                  +1 (870) 489-5478
                 </a>
               </div>
 
